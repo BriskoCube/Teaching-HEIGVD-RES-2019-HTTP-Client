@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.539
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RES-HTTP-Client", "RES-HTTP-Client\RES-HTTP-Client.csproj", "{4F05378A-F2C9-4FA9-874C-016A8ABC3E39}"
+EndProject
+Global
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F05378A-F2C9-4FA9-874C-016A8ABC3E39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F05378A-F2C9-4FA9-874C-016A8ABC3E39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F05378A-F2C9-4FA9-874C-016A8ABC3E39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F05378A-F2C9-4FA9-874C-016A8ABC3E39}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {569104BF-957D-41CE-8D50-7E65A110C773}
+	EndGlobalSection
+EndGlobal

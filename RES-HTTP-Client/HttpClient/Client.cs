@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Sockets;
 using System.Text;
+using static RES_HTTP_Client.HttpClient.Response;
 
 namespace RES_HTTP_Client.HttpClient
 {
@@ -50,7 +51,8 @@ namespace RES_HTTP_Client.HttpClient
 
         public Response Read()
         {
-            return Response.Parse(serverStream, clientSocket.ReceiveBufferSize);
+            ResponseParser parser = new ResponseParser();
+            return parser.Parse(serverStream);
         }
 
 

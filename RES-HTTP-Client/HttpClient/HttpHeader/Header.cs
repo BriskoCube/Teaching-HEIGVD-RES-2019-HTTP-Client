@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace RES_HTTP_Client.HttpClient.HttpHeader
@@ -17,9 +18,9 @@ namespace RES_HTTP_Client.HttpClient.HttpHeader
         {
             string[] headerParts = rawHeader.Replace("\r\n", "").Split(": ");
 
-            if(headerParts.Length == 2)
+            if(headerParts.Length >= 2)
             {
-                return new SingleHeader(headerParts[0], headerParts[1]);
+                return new SingleHeader(headerParts[0], string.Join(": ", headerParts.Skip(1)));
             }
 
             return null;
